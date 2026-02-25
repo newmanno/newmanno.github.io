@@ -3,9 +3,17 @@
 
 <head>
   <link rel="icon" href="https://raw.githubusercontent.com/newmanno/newmanno.github.io/main/assets/img/headshot.jpg">
-  <title>Nolan Newman, Ph.D.</title>
+  <title>Nolan Newman's resume</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" rel="stylesheet">
+  <style>
+  h2.ui.header.publications-header {
+    margin-bottom: 0.2em;  /* or 0 */
+  }
+  </style>
+  <!-- Example Font Awesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -18,20 +26,28 @@
             <i class="fab fa-github"></i>
             Github
           </a>
+		  
           <a class="ui right floated tiny basic button" href="https://www.linkedin.com/in/newmanno/"
             style="margin-top: 5px;" target="_blank">
             <i class="fab fa-linkedin"></i>
             LinkedIn
           </a>
+		  
           <a class="ui right floated tiny basic button"
             href="https://scholar.google.com/citations?hl=en&user=sPrZSyEAAAAJ" style="margin-top: 5px;"
             target="_blank">
             <i class="fas fa-graduation-cap"></i>
             Google Scholar
           </a>
-          <img class="ui avatar image"
-            src="https://raw.githubusercontent.com/newmanno/newmanno.github.io/main/assets/img/headshot.jpg">
-          <span>Nolan Newman, Ph.D.</span>
+		  
+		  <img class="ui avatar image"
+			   src="https://raw.githubusercontent.com/newmanno/newmanno.github.io/main/assets/img/headshot.jpg">
+
+		  <div class="content">
+			Nolan Newman, Ph.D.
+			<div class="sub header">Oslo, Norway</div>
+		  </div>
+		  
         </h1>
       </div>
     </div>
@@ -40,7 +56,7 @@
         <div class="column">
           <h3 class="ui header">
             <div class="content">
-              Postdoctoral researcher
+              Computational Biologist | Breast Cancer and Network Biology
               <div class="sub header"> <i class="fa-solid fa-briefcase"></i>
                 <div class="content"><a href="https://www.med.uio.no/ncmbm/english/" target="_blank"> Norwegian Centre for Molecular Biosciences and Medicine </a> </div>
                   <div class="sub header"> <i class="fa-brands fa-orcid"></i>
@@ -68,6 +84,10 @@
               <i class="check icon"></i>
             </div>
             <div class="item">
+              Pipeline development
+              <i class="check icon"></i>
+            </div>
+            <div class="item">
               Python and R
               <i class="check icon"></i>
             </div>
@@ -81,12 +101,15 @@
       <div class="row">
         <div class="column">
           <h2 class="ui header">About me</h2>
-          <p> I am currently a postdoctoral researcher at the University of Oslo, studying tumor heterogeneity in breast cancer through the reconstruction and comparison of single sample regulatory networks. My work has led to the development of the SiSaNA pipeline (https://github.com/kuijjerlab/sisana), which is software that helps users reconstruct single sample regulatory networks without the need of prior programming experience. During my PhD at Oregon State University, I studied the interplay between the gut microbiome and diseases (especially cancer and metabolic disease) of the host. Through the use of systems biology and network biology, I identified key factors (genes, microbiota, etc.) that are vital in the response to a treatment. 
+          <p> I am a postdoctoral researcher at the University of Oslo, studying tumor heterogeneity in breast cancer through the reconstruction and comparison of single sample regulatory networks. My work has included the development of the <a href="https://github.com/kuijjerlab/sisana" target="_blank">SiSaNA pipeline</a>, which is software that helps users reconstruct single sample regulatory networks all via a command line interface, without the need of prior programming experience. During my PhD, I applied systems and network biology to gut microbiome and host multi-omics data to identify genes and microbes driving disease and treatment response. I am particularly interested in building robust, reproducible pipelines that reveal novel therapeutic targets in cancer and metabolic disease
 		</p>
         </div>
       </div>
       <div class="row">
         <div class="column">
+		
+		  <!-- ... Education section ... -->
+
           <h2 class="ui header">Education</h2>
           <div class="ui celled list">
 		  
@@ -94,13 +117,13 @@
               <div class="header"><i class="graduation cap icon"></i> Ph.D., Pharmaceutical Sciences - Computational Biology
                 <div class="ui right floated">Sept. 2023</div>
               </div>
-              Oregon State University, Corvallis, OR, USA. <br>
+              Oregon State University, Corvallis, OR, USA <br>
               <b>Dissertation:</b> <i>Development and implementation of a transkingdom network analysis pipeline to identify drivers of disease.</i><br>
               <b>Advisor:</b> <a href="https://pharmacy.oregonstate.edu/faculty-staff/directory/andrey-morgun" target="_blank">Dr. Andrey Morgun</a>
             </div>
 			
             <div class="item">
-              <div class="header"><i class="graduation cap icon"></i> M.S., Pharamceutical Sciences - Computational Biology
+              <div class="header"><i class="graduation cap icon"></i> M.S., Pharmaceutical Sciences - Computational Biology
                 <div class="ui right floated">June 2021</div>
               </div>
               Oregon State University, Corvallis, OR, USA
@@ -116,45 +139,190 @@
           </div>
         </div>
       </div>
-		
-		  <h2 class="ui header">Experience</h2>
-          <div class="ui celled list">
-		  
-            <div class="item">
-              <div class="header"><i class="briefcase icon"></i> Postdoctoral researcher
-                <div class="ui right floated">2023-Present</div>
-              </div>
-              <a href="https://www.med.uio.no/ncmbm/english/" target="_blank"> Norwegian Centre for Molecular Biosciences and Medicine (University of Oslo) </a><br>
-              Oslo, Norway
-			  <ul>
-			    <li> Reconstructed and analyzed gene regulatory networks from single individuals to help identify additional subtypes of breast cancer patients </li> 
-			    <li> Developed the <b>SiSaNA</b> (<b>Si</b>ngle <b>Sa</b>mple <b>N</b>etwork <b>A</b>nalysis) pipeline </li> 
-			  </ul>
-            </div>
-			
-			<div class="item">
-			  <div class="header"><i class="briefcase icon"></i> PhD candidate in Pharmaceutical Sciences
-                <div class="ui right floated">2018-2023</div>
-              </div>
-              <a href="https://www.med.uio.no/ncmbm/english/" target="_blank"> Oregon State University </a><br>
-              Corvallis, OR, USA
-			  <ul>
-			    <li> Reconstructed transkingdom networks to identify genes and microbes essential for the development of diseases and/or the response to medication </li> 
-			    <li> Developed the TkNA (<b>T</b>rans<b>k</b>ingdom <b>N</b>etwork <b>A</b>nalysis) pipeline (https://github.com/CAnBioNet/TkNA) </li> 
-			  </ul>
-            </div>
+	  
+		<!-- ... End Education section ... -->
 
-			<div class="item">
-			  <div class="header"><i class="briefcase icon"></i> Graduate Teaching Assistant - Terminology of the Health Sciences
-                <div class="ui right floated">2019-2023</div>
-              </div>
-              <a href="https://www.med.uio.no/ncmbm/english/" target="_blank"> Oregon State University </a><br>
-              Corvallis, OR, USA<br>
-			  - Designed slides and lectured/ran the course
-            </div>
-			
-          </div>
-		  
+		<!-- ... Experience section ... -->
+
+		<div class="row">
+		  <div class="column">
+			<h2 class="ui header">Experience</h2>
+			<div class="ui celled list">
+			  <div class="item">
+				<div class="header">
+				  <i class="briefcase icon"></i> Postdoctoral researcher
+				  <div class="ui right floated">2023-Present</div>
+				</div>
+				<a href="https://www.med.uio.no/ncmbm/english/" target="_blank">
+				  Norwegian Centre for Molecular Biosciences and Medicine (University of Oslo)
+				</a><br>
+				Oslo, Norway<br>
+				- Reconstructed and analyzed gene regulatory networks from single individuals to help identify additional subtypes of breast cancer patients <br>
+				- Developed the <a href="https://github.com/kuijjerlab/sisana" target="_blank"><b>SiSaNA</b> (<b>Si</b>ngle-<b>Sa</b>mple <b>N</b>etwork <b>A</b>nalysis)</a> pipeline to help streamline the process of reconstructing single-sample regulatory networks
+			  </div>
+
+			  <div class="item">
+				<div class="header">
+				  <i class="briefcase icon"></i> PhD candidate in Pharmaceutical Sciences
+				  <div class="ui right floated">2018-2023</div>
+				</div>
+				<a href="https://pharmacy.oregonstate.edu/" target="_blank">Oregon State University</a><br>
+				Corvallis, OR, USA<br>
+				- Reconstructed transkingdom networks to identify genes and microbes essential for the development of diseases and/or the response to medication<br>
+				- Developed the TkNA (<b>T</b>rans<b>k</b>ingdom <b>N</b>etwork <b>A</b>nalysis) pipeline (https://github.com/CAnBioNet/TkNA) 
+			  </div>
+
+			  <div class="item">
+				<div class="header">
+				  <i class="briefcase icon"></i> Graduate Teaching Assistant - Terminology of the Health Sciences
+				  <div class="ui right floated">2019-2023</div>
+				</div>
+				<a href="https://pharmacy.oregonstate.edu/" target="_blank">Oregon State University</a><br>
+				Corvallis, OR, USA<br>
+				- Lectured the course, designed slides/study material, and wrote/graded exams
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- ... End Experience section ... -->
+
+		<!-- ... Publications section ... -->
+		<div class="row">
+		  <div class="column">
+			<h2 class="ui header publications-header">
+			  Publications
+			  <div class="sub header">
+				<i class="file outline icon"></i> (9) Research Articles |
+				<span>&#x1F589;</span> (5) First Author |
+				<i class="envelope icon"></i> (1) Preprint
+			  </div>
+			</h2>
+
+			<div class="ui celled list">
+			  <div class="item">
+				<div class="header">
+				  <i class="envelope icon"></i><span>&#x1F589;</span>
+				  SiSaNA: A Python-based command line interface for Single-Sample Network Analysis
+				  <div class="ui right floated">2025</div>
+				</div>
+				<b>DOI:</b>
+				<a href="https://doi.org/10.1101/2025.11.06.680212" target="_blank">
+				  10.1101/2025.11.06.680212
+				</a><br>
+				<b>Authors: <u>Newman, N.K.</u></b>, Belova, T., Kuijjer, M.L.
+			  </div>
+			  
+			  <div class="item">
+				<div class="header">
+				  <i class="file outline icon"></i><span>&#x1F589;</span>
+				  Host response to cholestyramine can be mediated by the gut microbiota
+				  <div class="ui right floated">2024</div>
+				</div>
+				<b>DOI:</b>
+				<a href="https://doi.org/10.20517/mrr.2023.82" target="_blank">
+				  10.20517/mrr.2023.82
+				</a><br>
+				<b>Authors: <u>Newman, N.K.</u></b>, Monnier, P.M., Rodrigues, R.R., Gurung, M., Vasquez-Perez, S., Hioki, K.A., Greer, R.L., Brown. K., Morgun, A., and Shulzhenko, N.
+			  </div>
+
+			  <div class="item">
+				<div class="header">
+				  <i class="file outline icon"></i><span>&#x1F589;</span>
+				  Transkingdom Network Analysis (TkNA): A systems framework for inferring causal factors underlying host–microbiota and other multi-omic interactions
+				  <div class="ui right floated">2024</div>
+				</div>
+				<b>DOI:</b>
+				<a href="https://doi.org/10.1038/s41596-024-00960-w" target="_blank">
+				  10.1038/s41596-024-00960-w
+				</a><br>
+				<b>Authors: <u>Newman, N.K.</u></b>, Macovsky, M.S., Rodrigues, R.R., Bruce, A.M., Pederson, J.W., Padiadpu, J., Shan, J., Williams, J., Patil, S.S., Dzutsev, A.K., Shulzhenko, N., Brown. K., Morgun, A.
+			  </div>
+			  
+			  <div class="item">
+				<div class="header">
+				  <i class="file outline icon"></i>
+				  Multi‐omic network analysis identified betacellulin as a novel target of omega‐3 fatty acid attenuation of western diet‐induced nonalcoholic steatohepatitis
+				  <div class="ui right floated">2023</div>
+				</div>
+				<b>DOI:</b>
+				<a href="https://doi.org/10.15252/emmm.202318367" target="_blank">
+				  10.15252/emmm.202318367
+				</a><br>
+				<b>Authors:</b> Padiadpu, J., Garcia‐Jaramillo, M., <b><u>Newman, N.K.</u></b>, , Pederson, J.W., Rodrigues, R., Li, Z., Singh, S., Monnier, P., Trinchieri, G., Brown, K., Dzutsev, A.K., Shulzhenko, N., Jump, D.B., Morgun, A.
+			  </div>
+			  
+			  <div class="item">
+				<div class="header">
+				  <i class="file outline icon"></i><span>&#x1F589;</span>
+				  Reducing gut microbiome-driven adipose tissue inflammation alleviates metabolic syndrome
+				  <div class="ui right floated">2023</div>
+				</div>
+				<b>DOI:</b>
+				<a href="https://doi.org/10.1186/s40168-023-01637-4" target="_blank">
+				  10.1186/s40168-023-01637-4
+				</a><br>
+				<b>Authors: <u>Newman, N.K.</u></b>, Zhang, Y., Padiadpu, J., Miranda, C.L., Magana, A.A., Wong, C.P., Hioki, K.A., Pederson, J.W., Li, Z., Gurung, M., Bruce, A.M., Brown, K., Bobe, G., Sharpton, T.J., Shulzhenko, N., Maier, C.S., Stevens, J.F., Gombart, A.F., Morgun, A.
+			  </div>
+			  
+			  <div class="item">
+				<div class="header">
+				  <i class="file outline icon"></i>
+				  Early transcriptome changes associated with western diet induced NASH in Ldlr−/− mice points to activation of hepatic macrophages and an acute phase response
+				  <div class="ui right floated">2023</div>
+				</div>
+				<b>DOI:</b>
+				<a href="https://doi.org/10.3389/fnut.2023.1147602" target="_blank">
+				  10.3389/fnut.2023.1147602
+				</a><br>
+				<b>Authors:</b> Padiadpu, J., Spooner, M.H., Li, Z., <b>Newman, N.K.</b>, Löhr, C.V., Apperson, K.D., Dzutsev, A., Trinchieri, G., Shulzhenko, N., Morgun, A., Jump, D.B.
+			  </div>
+			  
+			  <div class="item">
+				<div class="header">
+				  <i class="file outline icon"></i>
+				  Microbiota and adipocyte mitochondrial damage in type 2 diabetes are linked by Mmp12+ macrophages
+				  <div class="ui right floated">2022</div>
+				</div>
+				<b>DOI:</b>
+				<a href="https://doi.org/10.1084/jem.20220017" target="_blank">
+				  10.1084/jem.20220017
+				</a><br>
+				<b>Authors:</b> Li, Z., Gurung, M., Rodrigues, R.R., Padiadpu, J., <b><u>Newman, N.K.</u></b>, Manes, N.P., Pederson, J.W., Greer, R.L., Vasquez-Perez, S., You, H., Hioki, K.A., Moulton, Z., Fel, A., De Nardo, D., Dzutsev, A.K., Nita-Lazar, A., Trinchieri, G., Shulzhenko, N., Morgun, A.
+			  </div>
+			  
+			  <div class="item">
+				<div class="header">
+				  <i class="file outline icon"></i>
+				  Intestinal microbiota signatures of clinical response and immune-related adverse events in melanoma patients treated with anti-PD-1
+				  <div class="ui right floated">2022</div>
+				</div>
+				<b>DOI:</b>
+				<a href="https://doi.org/10.1038/s41591-022-01698-2" target="_blank">
+				  10.1038/s41591-022-01698-2
+				</a><br>
+				<b>Authors:</b> McCulloch, J.A., Davar, D., Rodrigues, R.R., Badger, J.H., Fang, J.R., Cole, A.M., Balaji, A.K., Vetizou, M., Prescott, S.M., Fernandes, M.R., Costa, R.G.F., Yuan, W., Salcedo, R., Bahadiroglu, E., Roy, S., DeBlasio, R.N., Morrison, R.M., Chauvin, J.-M., Ding, Q., Zidi, B., Lowin, A., Chakka, S., Gao, W., Pagliano, O., Ernst, S.J., Rose, A., <b><u>Newman, N.K.</u></b>, Morgun, A., Zarour, H.M., Trinchieri, G., Dzutsev, A.K.
+			  </div>			  
+			  
+			  <div class="item">
+				<div class="header">
+				  <i class="file outline icon"></i><span>&#x1F589;</span>
+				  Dietary indole-3-carbinol activates AhR in the gut, alters Th17-microbe interactions, and exacerbates insulitis in NOD mice
+				  <div class="ui right floated">2021</div>
+				</div>
+				<b>DOI:</b>
+				<a href="https://doi.org/10.3389/fimmu.2020.606441" target="_blank">
+				  10.3389/fimmu.2020.606441
+				</a><br>
+				<b>Authors:</b> Kahalehili, H.M., <b><u>Newman, N.K.</u></b>, Pennington, J.M., Kolluri, S.K., Kerkvliet, N.I., Shulzhenko, N., Morgun, A., and Ehrlich, A.K.
+			  </div>
+			  
+
+
+			  <!-- Continue adding other publication items here in the same pattern -->
+			</div>
+		  </div>
+		</div>
+				  
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
 </body>
